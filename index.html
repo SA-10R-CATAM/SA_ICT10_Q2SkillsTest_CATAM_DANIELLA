@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Club Information</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #c77dff; /* Light maroon tint */
+            color: #240046; /* Dark maroon text */
+        }
+        h1 {
+            color: #3c096c; /* Maroon */
+            text-align: center;
+            border-bottom: 2px solid #3c096c;
+            padding-bottom: 10px;
+        }
+        select, button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #3c096c;
+            border-radius: 4px;
+            background-color: c77dff;
+            color: #240046;
+        }
+        button {
+            background-color: #3c096c;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #5a189a; /* Darker maroon */
+        }
+        #club-info {
+            background-color: #ffffff; /* Very light maroon tint */
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border-left: 4px solid #3c096c;
+            color: #240046;
+        }
+        label {
+            font-weight: bold;
+            color: #3c096c;
+        }
+        option {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>School Club Information</h1>
+    
+    <label for="club-select">Select a club:</label>
+    <select id="club-select">
+        <option value="">-- Select a club --</option>
+        <option value="photo">Photography Club(˶˃⤙˂˶)♡</option>
+        <option value="drama">Drama Club૮ ྀིᴗ͈ . ᴗ͈ ྀིა</option>
+        <option value="dance">Dance Clubꉂ(˵˃ ᗜ ˂˵)</option>
+        <option value="music">𝄞 Music Club♬.ᐟ</option>
+        <option value="art">Art Club૮꒰ ˶• ༝ •˶꒱ა ♡</option>
+        
+    </select>
+    
+    <button id="show-info" py-click="show_club_info">Show Club Information</button>
+    
+    <pre id="club-info"></pre>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
